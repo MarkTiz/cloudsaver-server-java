@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  cloudsaver:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cloudsaver
+    ports:
+      - "8009:8009"
+    volumes:
+      - ./database.sqlite:/app/database.sqlite
+      - ./application.yml:/app/application.yml
+    environment:
+      - TZ=Asia/Shanghai

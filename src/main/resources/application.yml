@@ -1,0 +1,54 @@
+server:
+  port: 8009
+
+
+spring:
+  datasource:
+    url: jdbc:sqlite:./database.sqlite
+    driver-class-name: org.sqlite.JDBC
+    username:
+    password:
+  messages:
+    basename: i18n/messages
+    cache-duration: 60
+    encoding: UTF-8
+
+
+jwt:
+  header: Authorization
+  secret: s6IUUvHDNkiKsjNeP3GtYKoN74g3wr83Jwx2xHy/0oc=
+  expire: 2419200000
+  issuer: foloyide
+
+
+telegram:
+  base_url: https://t.me/s
+  channels:
+    share4115: 115资源分享频道
+    ysxb48: 115网盘资源发布
+  cloudPatterns:
+    pan115: "https?://(?:115|anxia|115cdn)\\.com/s/[^\\s<>\\\"]+"
+    quark: "https?://pan\\.quark\\.cn/[^\\s<>\\\"]+"
+    baiduPan: "https?://(?:pan|yun)\\.baidu\\.com/[^\\s<>\\\"]+"
+    tianyi: "https?://(?:www\\.)?tianyi\\.com/s/[^\\s<>\\\"]+"
+    aliyun: "https?://\\w+\\.(?:alipan|aliyundrive)\\.com/[^\\s<>\\\"]+"
+    pan123: "https?://(?:www\\.)?123[^/\\s<>\\\"]+\\.com/s/[^\\s<>\\\"]+"
+    yidong: "https?://caiyun\\.139\\.com/[^\\s<>\\\"]+"
+
+
+nullbrapi:
+  X-APP-ID: #你的appid
+  X-API-KEY: #你的apikey
+
+115config:
+  root_folder_id: #根目录文件id
+  root_username: #管理员名称
+  web_api: https://webapi.115.com
+  offline_api: https://115.com
+  sign: #离线下载签名
+  uid: #离线下载uid
+
+quarkconfig:
+  root_folder_id: #根目录文件id
+  web_api: https://drive-h.quark.cn
+
