@@ -4,24 +4,24 @@ import lombok.Data;
 
 @Data
 public class OnlineSearchItem {
-    private String mediaType;
+    private String media_type;
     private int tmdbid;
     private String poster;
     private String title;
     private String overview;
     private int flg115;
-    private double voteAverage;
-    private String releaseDate;
+    private double vote_average;
+    private String release_date;
 
-    public OnlineSearchItem(String mediaType, int tmdbid, String poster, String title, String overview,
-                            int flg115, double voteAverage, String releaseDate) {
-        this.mediaType = mediaType;
+    public OnlineSearchItem(String media_type, int tmdbid, String poster, String title, String overview,
+                            int flg115, double vote_average, String release_date) {
+        this.media_type = media_type;
         this.tmdbid = tmdbid;
         this.poster = poster;
         this.title = title;
         this.overview = overview;
         this.flg115 = flg115;
-        this.voteAverage = voteAverage;
-        this.releaseDate = releaseDate;
+        this.vote_average = vote_average;
+        this.release_date = release_date;
     }
 }

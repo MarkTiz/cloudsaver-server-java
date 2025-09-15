@@ -17,7 +17,7 @@ public class DoubanController {
 
     @GetMapping("/douban/hot")
     public List<DoubanSubject> searchHot(
-            @RequestParam String type,
+            @RequestParam(required = false) String type,
             @RequestParam String tag,
             @RequestParam(name = "page_limit", defaultValue = "50") int pageLimit,
             @RequestParam(name = "page_start", defaultValue = "0") int pageStart) {

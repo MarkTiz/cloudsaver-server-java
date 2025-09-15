@@ -67,10 +67,10 @@ public class SearchServiceImpl implements SearchService {
                                 apiChannel.getName(),
                                 apiChannel.getId(),
                                 item.getTmdbid(),
-                                item.getReleaseDate(),
-                                item.getVoteAverage(),
-                                item.getReleaseDate(),
-                                item.getMediaType()
+                                item.getRelease_date(),
+                                item.getVote_average(),
+                                item.getRelease_date(),
+                                item.getMedia_type()
                         ))
                         .collect(Collectors.toList());
 
